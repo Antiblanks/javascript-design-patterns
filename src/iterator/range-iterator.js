@@ -25,8 +25,4 @@ export default class RangeIterator {
       done: false
     };
   }
-
-  hasNext() {
-    return this._index < this._end.length;
-  }
 }
