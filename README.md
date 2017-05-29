@@ -14,7 +14,6 @@ I assume Mark will explain in more detail, here are his code examples to have a 
 
 ```
 export default class RangeIterator {
-
   [Symbol.iterator] = () => (this)
 
   get index() {
@@ -29,7 +28,7 @@ export default class RangeIterator {
   }
 
   next() {
-    if (this._index >= this._end) {
+    if (this._index >= this._end) {      
       return { done: true };
     }
 
@@ -39,10 +38,6 @@ export default class RangeIterator {
       value: this._start += this._increment,
       done: false
     };
-  }
-
-  hasNext() {
-    return this._index < this._end.length;
   }
 }
 ```

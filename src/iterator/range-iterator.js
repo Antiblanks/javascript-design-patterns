@@ -1,5 +1,4 @@
 export default class RangeIterator {
-
   [Symbol.iterator] = () => (this)
 
   get index() {
